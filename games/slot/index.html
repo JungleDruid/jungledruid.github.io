@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Unity WebGL Player | slot</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Builds.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "Build/Builds.json",
+        { onProgress: UnityProgress }
+      );
     </script>
   </head>
   <body>
@@ -18,7 +22,33 @@
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">slot</div>
+        <div class="title">Puppy Slot v1.0a</div>
+      </div>
+      <div class="help">
+        <div>
+          <h4>Keyboard Mapping</h4>
+          <ul>
+            <li>Space - Spin</li>
+            <li>Up - Increase Bet</li>
+            <li>Down - Decrease Bet</li>
+            <li>S - 5X Speed</li>
+            <li>F - Force Result</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Debug</h4>
+          <ul>
+            <li>Force Result</li>
+            <ul>
+              <li>Force the result to be identical to the images above.</li>
+              <li>Click the images above to change the result.</li>
+            </ul>
+            <li>5X Speed</li>
+            <ul>
+              <li>Speed up 5 times.</li>
+            </ul>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
