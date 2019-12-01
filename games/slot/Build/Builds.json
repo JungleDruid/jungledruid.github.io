@@ -1,7 +1,7 @@
 {
 "companyName": "Tony",
 "productName": "Puppy Slot",
-"productVersion": "v1.0a",
+"productVersion": "v1.1a",
 "dataUrl": "Builds.data.unityweb",
 "wasmCodeUrl": "Builds.wasm.code.unityweb",
 "wasmFrameworkUrl": "Builds.wasm.framework.unityweb",
